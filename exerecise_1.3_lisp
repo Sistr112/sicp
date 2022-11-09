@@ -1,0 +1,7 @@
+(define (sum x,y,z) 
+  cond((and ( > x y) (> x z) (> y z)) (+ (* x x) (* y y))
+       (and ( > y x) (> y z) (> z x)) (+ (* z z) (* y y)
+       (and ( > y x) (> y z) (> x z)) (+ (* x x) (* y y)
+       (and ( > z x) (> z y) (> y x)) (+ (* z z) (* y y)
+       (and ( > x y) (> x z) (> z y)) (+ (* z z) (* x x)
+       (and ( > z y) (> z x) (> x y)) (+ (* z z) (* x x)))
